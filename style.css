@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+.program {
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 10%,80%,10%;
+  justify-content: center;
+  grid-template-areas:
+    "border-1" 
+    "sketch-holder" 
+    "border-2";
+}
+
+#border-1 {
+  display: grid;
+  border: 10px solid red;
+}
+
+#border-2 {
+  display: grid;
+  border: 10px solid red;
+}
+
+#sketch-holder {
+  position: relative;
+}
